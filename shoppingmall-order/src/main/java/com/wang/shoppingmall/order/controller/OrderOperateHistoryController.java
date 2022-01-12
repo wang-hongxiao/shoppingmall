@@ -1,20 +1,16 @@
 package com.wang.shoppingmall.order.controller;
 
+import com.wang.common.utils.PageUtils;
+import com.wang.common.utils.R;
+import com.wang.shoppingmall.order.entity.OrderOperateHistoryEntity;
+import com.wang.shoppingmall.order.service.OrderOperateHistoryService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.wang.shoppingmall.order.entity.OrderOperateHistoryEntity;
-import com.wang.shoppingmall.order.service.OrderOperateHistoryService;
-import com.wang.common.utils.PageUtils;
-import com.wang.common.utils.R;
 
 
 
@@ -26,7 +22,7 @@ import com.wang.common.utils.R;
  * @date 2022-01-01 18:28:30
  */
 @RestController
-//@RequestMapping("order/orderoperatehistory")
+@RequestMapping("order/orderoperatehistory")
 public class OrderOperateHistoryController {
     @Autowired
     private OrderOperateHistoryService orderOperateHistoryService;

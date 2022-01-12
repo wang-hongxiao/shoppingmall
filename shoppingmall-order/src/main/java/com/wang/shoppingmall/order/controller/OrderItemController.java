@@ -26,7 +26,7 @@ import com.wang.common.utils.R;
  * @date 2022-01-01 18:28:30
  */
 @RestController
-//@RequestMapping("order/orderitem")
+@RequestMapping("order/orderitem")
 public class OrderItemController {
     @Autowired
     private OrderItemService orderItemService;

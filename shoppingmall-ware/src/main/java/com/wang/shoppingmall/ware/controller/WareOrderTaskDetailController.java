@@ -1,20 +1,16 @@
 package com.wang.shoppingmall.ware.controller;
 
+import com.wang.common.utils.PageUtils;
+import com.wang.common.utils.R;
+import com.wang.shoppingmall.ware.entity.WareOrderTaskDetailEntity;
+import com.wang.shoppingmall.ware.service.WareOrderTaskDetailService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.wang.shoppingmall.ware.entity.WareOrderTaskDetailEntity;
-import com.wang.shoppingmall.ware.service.WareOrderTaskDetailService;
-import com.wang.common.utils.PageUtils;
-import com.wang.common.utils.R;
 
 
 
@@ -26,7 +22,7 @@ import com.wang.common.utils.R;
  * @date 2022-01-01 18:11:23
  */
 @RestController
-//@RequestMapping("ware/wareordertaskdetail")
+@RequestMapping("ware/wareordertaskdetail")
 public class WareOrderTaskDetailController {
     @Autowired
     private WareOrderTaskDetailService wareOrderTaskDetailService;

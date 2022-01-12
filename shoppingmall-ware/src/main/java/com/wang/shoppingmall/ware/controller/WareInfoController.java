@@ -26,7 +26,7 @@ import com.wang.common.utils.R;
  * @date 2022-01-01 18:11:23
  */
 @RestController
-//@RequestMapping("ware/wareinfo")
+@RequestMapping("ware/wareinfo")
 public class WareInfoController {
     @Autowired
     private WareInfoService wareInfoService;

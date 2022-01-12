@@ -10,7 +10,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>shoppingmall-coupon</module>
+       <!-- <module>shoppingmall-coupon</module>-->
+        <module>shoppingmall-common</module>
         <module>shoppingmall-member</module>
         <module>shoppingmall-order</module>
         <module>shoppingmall-product</module>

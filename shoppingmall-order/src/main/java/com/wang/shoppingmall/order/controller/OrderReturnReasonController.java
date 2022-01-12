@@ -26,7 +26,7 @@ import com.wang.common.utils.R;
  * @date 2022-01-01 18:28:30
  */
 @RestController
-//@RequestMapping("order/orderreturnreason")
+@RequestMapping("order/orderreturnreason")
 public class OrderReturnReasonController {
     @Autowired
     private OrderReturnReasonService orderReturnReasonService;

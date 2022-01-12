@@ -12,7 +12,7 @@ import lombok.Data;
  * 
  * @author wanghongxiao
  * @email 2763210788@qq.com
- * @date 2022-01-01 19:06:20
+ * @date 2022-01-12 20:50:35
  */
 @Data
 @TableName("ums_integration_change_history")

@@ -1,20 +1,16 @@
 package com.wang.shoppingmall.member.controller;
 
+import com.wang.common.utils.PageUtils;
+import com.wang.common.utils.R;
+import com.wang.shoppingmall.member.entity.MemberLevelEntity;
+import com.wang.shoppingmall.member.service.MemberLevelService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.Arrays;
 import java.util.Map;
 
 //import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
-import com.wang.shoppingmall.member.entity.MemberLevelEntity;
-import com.wang.shoppingmall.member.service.MemberLevelService;
-import com.wang.common.utils.PageUtils;
-import com.wang.common.utils.R;
 
 
 
@@ -23,10 +19,10 @@ import com.wang.common.utils.R;
  *
  * @author wanghongxiao
  * @email 2763210788@qq.com
- * @date 2022-01-01 19:06:20
+ * @date 2022-01-12 20:50:35
  */
 @RestController
-//@RequestMapping("member/memberlevel")
+@RequestMapping("member/memberlevel")
 public class MemberLevelController {
     @Autowired
     private MemberLevelService memberLevelService;

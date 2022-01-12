@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * @author wanghongxiao
  * @email 2763210788@qq.com
- * @date 2022-01-01 19:06:20
+ * @date 2022-01-12 20:50:35
  */
 public interface MemberReceiveAddressService extends IService<MemberReceiveAddressEntity> {
 
